@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="beans.Employee" table="employee" schema="public">
+		<!-- Class property and table column names are same. Thus omitted column 
+			attriute -->
+		<id name="empId" />
+		<property name="empName" />
+		<property name="empMail" />
+	</class>
+</hibernate-mapping>
