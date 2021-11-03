@@ -1,6 +1,6 @@
 # hibernate-sample
 
-This project allows to add values from java application (maven) to database table using hibernate.
+This project allows to add values from java application (maven) to database(PostgreSQL) table using hibernate.
 
 Steps are:
 
