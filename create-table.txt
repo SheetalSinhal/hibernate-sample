@@ -1,0 +1,10 @@
+-- Create table in postgresql database --
+
+CREATE TABLE public.student
+(
+    sid integer NOT NULL,
+    sname character varying COLLATE pg_catalog."default",
+    semail character varying COLLATE pg_catalog."default",
+    smarks double precision,
+    CONSTRAINT student_pkey PRIMARY KEY (sid)
+)
