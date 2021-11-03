@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	<hibernate-configuration>
+		<session-factory>
+		
+		<!-- Database Properties -->
+		<!-- Jbdc Database class name -->
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<!-- Jdbc Database Url  -->
+		<property name="connection.url">jdbc:postgresql://localhost:5432/TestHibernate</property>
+		<property name="connection.username">postgres</property>
+		<property name="connection.password">root</property>
+		
+		<!-- Dialet for Database -->
+		<property name="dialet">org.hibernate.dialect.PostgreSQLDialect</property>
+		
+		<!-- Mapping file -->
+		<mapping resource="resources/student-db-mapping.hbm.xml"/>
+		
+		</session-factory>
+	</hibernate-configuration>
