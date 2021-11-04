@@ -22,6 +22,10 @@ iii. For delete, method is:
       a) session_obj.delete(obj_to_delete)
           obj_to_delete => not needed to set all fields, works fine if only primary property is only set.
           
+iv. For Select, methods are:
+    a) session_obj.get(Entity_Class,primaryKey)
+    b) session_obj.load(Entity_Class, primaryKey)
+          
  
  
  Note: All above operations performed in database only when transaction_obj.commit() is called.
