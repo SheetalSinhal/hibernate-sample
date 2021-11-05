@@ -1,0 +1,15 @@
+For customized primary key generator, steps are:
+
+i) Create entity class with default constructor and getter and setters for fields.
+ii) Create hibernate configuration file.
+iii) Create test application.
+iv) Create class that generate custom primary key for the record.
+      Class extends IdentityGenerator class and override generate() method.
+      generate() methods contains logic that creates custom primary key.
+      
+ For Reference:
+ 
+ Account class (entity), AccountNumberGenerator class(custom primary key generator class), resources/account-db-mapping.hbm.xml (mapping file) and autoGeneratePrimaryKey_Customized() method in App class
+ 
+ Note: If getting error while execution create account table, create table by yourself in database.
+ Note: For sample used concept of Sequence in database.
