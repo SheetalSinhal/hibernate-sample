@@ -1,0 +1,16 @@
+In Postgresql
+
+1. Query to create sequence
+
+CREATE SEQUENCE public.account_id_sequence;
+
+2. Create account_info table
+
+CREATE TABLE public.account_info
+(
+    acc_number character varying COLLATE pg_catalog."default" NOT NULL,
+    acc_holder character varying COLLATE pg_catalog."default",
+    acc_type character varying COLLATE pg_catalog."default",
+    acc_balance double precision,
+    CONSTRAINT account_info_pkey PRIMARY KEY (acc_number)
+)
