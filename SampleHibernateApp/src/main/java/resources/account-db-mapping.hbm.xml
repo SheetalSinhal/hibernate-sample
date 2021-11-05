@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entities.Account" table="account_info" schema="public">
+		<id name="accountNumber" column="acc_number">
+			<generator class="entities.AccountNumberGenerator" />
+		</id>
+		<property name="accountHolder" column="acc_holder" />
+		<property name="type" column="acc_type" />
+		<property name="balance" column="acc_balance" />
+	</class>
+</hibernate-mapping>

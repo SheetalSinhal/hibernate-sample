@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="entities.Course" table="courses" schema="public">
+		<id name="courseId" column="course_id">
+			<generator class="increment" />
+		</id>
+		<property name="courseName" column="course_name" />
+		<property name="fees" column="course_fees" />
+	</class>
+</hibernate-mapping>
