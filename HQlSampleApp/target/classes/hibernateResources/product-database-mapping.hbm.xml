@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="modals.Product" table="products" schema="public">
+		<!-- <id name="productId" column="product_id" /> <property name="productName" 
+			column="product_name"/> -->
+
+		<composite-id>
+			<key-property name="productId" column="product_id" />			
+			<key-property name="productName" column="product_name" />
+		</composite-id>
+
+		<property name="productPrice" column="price" />
+		<property name="productCategory" column="product_category" />
+	</class>
+</hibernate-mapping>
+ 
