@@ -33,5 +33,6 @@ Note : for composite primary key(primary key as combination of multiple columns)
     
     For more reference, refer    
     https://www.onlinetutorialspoint.com/hibernate/hibernate-composite-key-mapping-example.html
+    https://www.tutorialandexample.com/hibernate-composite-primary-key/
 
     
